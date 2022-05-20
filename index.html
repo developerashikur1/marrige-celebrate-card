@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Assignment</title>
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class="item">
+                <img class="logoImg" src="assets/Logo.png" alt=""/>
+            </div>
+            <div class="item">
+                <nav class="navItem">
+                    <a href="">Wedding Cards </a>
+                    <a href="">Birthday Cards</a>
+                    <a href="">Feeling Cards </a>
+                    <a href="">Anniversary Cards </a>
+                </nav>
+            </div>
+            <div class="item accessContainer">
+                <button class="access seperator">Login</button>
+                <button class="access">Signup</button>
+            </div>
+        </section>
+    </header>
+    
+    <!-- mobile mode menu -->
+    <section class="mobileContainer">
+        <img class="logoIcon" src="assets/iconsbar.png" alt=""/>
+        <img class="logoMobile" src="assets/Logo.png" alt=""/>
+    </section>
+    
+    <!-- slider section -->
+    <section class="sliderSection">
+        <h2>Digital Card Details</h2>
+    </section>
+
+    <section class="sliderMasterSection">
+        <section class="mainCardSection">
+             <div class="firstCardSection">
+                
+                <!-- swiper js start -->
+                <div class="mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/assets/Page1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/Page2.jpg"  />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/Page3.jpg" />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <!-- swiper js end -->
+             </div>
+
+             <!-- card details -->
+             <div class="secondCardSection">
+                <h2>Card Title</h2>
+                <div class="cardPricing">
+                    <p>$499 <span style="font-size: 20px; text-decoration: line-through;">$2000</span> </p>
+                    <p style="color:rgba(34, 214, 13, 0.999)">75%Off</p>
+                </div>
+                <p style="color: gray; font-weight: 200; line-height: 18px; padding: 0 1rem ;">Donec eu ornare mi. Sed finibus
+                    condimentum mauris, ut dictum eros
+                    maximus vitae. Nullam
+                    condimentum tortor ac elit feugiat
+                    iaculis. Aenean mauris nisl, blandit
+                </p>
+                <button class="cardBtn">Try this Card</button>
+             </div>
+
+             <!-- card details for mobile -->
+             <div class="mobileCardSection">
+                 <button class="mobileCardBtn">Try this Card</button>
+                 <div class="cardPricing">
+                     <p>$499 <span style="font-size: 18px; text-decoration: line-through;">$2000</span> </p>
+                     <p style="font-size:20px; color:rgba(34, 214, 13, 0.999)">75%Off</p>
+                </div>
+                    <h2>Card Title</h2>
+                    <p style="color: gray; font-weight: 200; line-height: 18px; padding: 0 1rem ;">Donec eu ornare mi. Sed finibus
+                        condimentum mauris, ut dictum eros
+                        maximus vitae. Nullam
+                        condimentum tortor ac elit feugiat
+                        iaculis. Aenean mauris nisl, blandit
+                    </p>
+             </div>
+        </section>
+
+        <br><br>
+
+        <!-- features Section -->
+        <h2 class="features">Features</h2>
+        <section class="featuresSection">
+            <div class="featuresElement">
+               <img src="/assets/blur-item.PNG" alt="">
+               <p> Create your card <br> in just 5 mins</p>
+            </div>
+            <div class="featuresElement">
+               <img src="/assets/blur-item.PNG" alt="">
+               <p> Customize the Text <br>
+                with "Edit this Page" Option</p>
+            </div>
+            <div class="featuresElement">
+               <img src="/assets/blur-item.PNG" alt="">
+               <p> Editing is available <br>
+                after purchase also</p>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 3,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+</body>
+</html>
